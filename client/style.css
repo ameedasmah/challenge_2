@@ -1,0 +1,34 @@
+
+.container{
+     display: flex;
+    justify-content: center;
+    margin: auto;
+    padding:20px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.CSV{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sendform{
+padding-top: 10px;
+padding-bottom: 10px;
+}
+
+h1{
+    text-align: center;
+    color: black;
+    background-color: red;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-right: 30px;
+}
+
+
+
