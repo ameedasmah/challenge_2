@@ -35,32 +35,29 @@ const sendHttpRequest = (method, url, data) => {
 
   
 
-let json = {}
-let csv = ''
+let obj = {}
 
-const sendData = (json) => {
-    sendHttpRequest('POST', 'http://127.0.0.1:3000/json', json)
+
+const sendData = (param) => {
+    sendHttpRequest('POST', 'http://127.0.0.1:3000/Jasontocvs', param)
       .then(responseData => {
-        csv = responseData
-        console.log(csv)
-        csvRespond.innerHTML = csv
+        console.log(responseData)
       })
       .catch(err => {
         console.log(err)
       })
   }
 
-const handeChange = (e) => {
-    json = e.target.value
-    console.log(json)
-    // create(json)
+const change = (e) => {
+    obj = e.target.value
+    console.log(obj)
     
 
 }
 
-const handleSubmit = (e) => {
+const submit = (e) => {
     e.preventDefault()
-    sendData(json)
+    sendData(obj)
 }
 
 
@@ -68,8 +65,8 @@ const handleSubmit = (e) => {
 
 
 
-jsonText.addEventListener('change' , handeChange )
-submitJson.addEventListener('click' , handleSubmit)
+fromjason.addEventListener('change' , change )
+subthejason.addEventListener('click' , submit)
 
 
 

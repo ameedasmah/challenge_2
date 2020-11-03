@@ -5,11 +5,11 @@ app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 
 app.use(express.static(__dirname +'/./client'))
-app.post('/jason',(req,res)=>{
+app.post('/Jasontocvs',(req,res)=>{
     res.status(201).jason(req.body)
 })
 
-app.get('/jason' , (req,res) =>{
+app.get('/Jasontocvs' , (req,res) =>{
     res.status(200).json(req,res)
   })
 
